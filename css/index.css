@@ -1,0 +1,388 @@
+body {
+  min-width: 350px;
+  margin: 1em;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+header {
+  z-index: 500;
+  height: 4em;
+  margin: 0em;
+  background: wheat;
+  justify-content: space-between;
+  display: flex;
+}
+header .menu {
+  margin: 0;
+  margin-right: 0.5em;
+  z-index: 900;
+}
+header .txtlogo {
+  color: black;
+  margin-top: 0.25em;
+  margin-left: 0.5em;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: wheat;
+  color: #6B2718;
+  height: 1.25em;
+}
+footer p {
+  text-align: left;
+  font-size: 0.75em;
+  margin-top: 0em;
+}
+
+.hero {
+  font-size: 100%;
+  text-align: center;
+}
+.hero .logo {
+  margin-left: 1em;
+  -webkit-animation: intro 2.5s forwards;
+          animation: intro 2.5s forwards;
+}
+.hero .sub-motto {
+  font-size: 100%;
+  margin-top: -2.25em;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+  color: #6B2718;
+  padding-bottom: 4em;
+}
+.hero h1 {
+  font-size: 200%;
+  margin-top: 2em;
+  margin-bottom: -1em;
+  font-weight: 600;
+  color: black;
+}
+.hero .main-txt {
+  width: 100%;
+  margin-top: -20em;
+}
+.hero .main-img {
+  width: 75%;
+}
+
+.scroll {
+  visibility: hidden;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+nav .close {
+  width: 2em;
+  float: right;
+  margin: 0;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+nav ul a {
+  color: black;
+  padding: 0.75em 2em;
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  nav ul a:hover {
+    color: #6B2718;
+    background-color: rgba(245, 222, 179, 0.507);
+  }
+}
+
+.desc-header {
+  padding-top: 10%;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.descriptions {
+  text-align: center;
+}
+.descriptions h2 {
+  margin-top: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+.descriptions .desc-product {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  margin-left: 1.75em;
+  margin-right: 1.75em;
+}
+.descriptions .prodpic {
+  text-align: center;
+  width: 80%;
+}
+
+.open-nav {
+  transform: translateX(0%);
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    min-width: 350px;
+    margin: 1em 4em;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  body {
+    min-width: 350px;
+    margin: 1em 3em;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  header {
+    height: 4em;
+    margin-top: 1.5em;
+  }
+  header nav {
+    transform: translateX(0);
+    position: unset;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  header nav ul {
+    display: flex;
+    font-size: 3em;
+    margin-top: auto;
+  }
+  header nav ul a {
+    padding: 1em 2em;
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(black, black);
+    background-size: 0% 0.1em;
+    background-position-y: 75%;
+    background-position-x: 1em;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-in-out;
+    transition: background-size 0.4s ease-in-out;
+  }
+  header nav ul .one a:hover,
+header nav ul .one a:focus,
+header nav ul .one a:active {
+    background-size: 53% 0.1em;
+    margin: auto;
+  }
+  header nav ul .two a:hover,
+header nav ul .two a:focus,
+header nav ul .two a:active {
+    background-size: 47% 0.1em;
+    margin: auto;
+  }
+  header nav ul .three a:hover,
+header nav ul .three a:focus,
+header nav ul .three a:active {
+    background-size: 53% 0.1em;
+    margin: auto;
+  }
+  header nav ul .four a:hover,
+header nav ul .four a:focus,
+header nav ul .four a:active {
+    background-size: 49% 0.1em;
+    margin: auto;
+  }
+  header nav .close {
+    display: none;
+  }
+  .hero {
+    padding-top: 1%;
+    padding-bottom: 15%;
+    font-size: 100%;
+    text-align: center;
+  }
+  .hero .scroll {
+    visibility: visible;
+    text-align: center;
+    height: 1em;
+    width: 1.5em;
+    margin-top: -6em;
+    animation: bobbing-chevron 0.5s alternate-reverse infinite;
+  }
+  .hero .main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-top: 0em;
+  }
+  .hero .main .main-img {
+    height: auto;
+    width: 150%;
+    margin-left: -15em;
+    margin-top: 5em;
+  }
+  .hero .main .main-txt {
+    margin-left: 3em;
+    margin-top: 10em;
+    width: 45%;
+  }
+  .hero .logo {
+    margin-top: -4em;
+    margin-left: 4em;
+    height: 20em;
+    width: auto;
+  }
+  .hero .sub-motto {
+    font-size: 100%;
+    font-weight: 600;
+    margin-top: -3.5em;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+    color: #6B2718;
+    padding-bottom: 4em;
+    -webkit-animation: introsub 3s forwards;
+            animation: introsub 3s forwards;
+  }
+  .hero h1 {
+    font-size: 250%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: black;
+  }
+  .desc-header {
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    font-size: 5em;
+    background-image: linear-gradient(black, black);
+    background-size: 55% 0.01em;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+  .product {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3em;
+  }
+  .prodpic {
+    width: 20em;
+    margin-right: 15em;
+  }
+  .info {
+    margin-top: -2em;
+    text-align: center;
+    width: 20em;
+    margin-left: 15em;
+  }
+  .info .desc-product {
+    font-size: medium;
+    font-weight: 300;
+  }
+  .product.reverse {
+    grid-template-areas: "left right";
+  }
+  .product.reverse .prodpic {
+    grid-area: left;
+    margin-left: 10em;
+    margin-right: 0em;
+  }
+  .product.reverse .info {
+    margin-right: 15em;
+    margin-left: 0em;
+  }
+}
+.end {
+  padding-bottom: 5em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@-webkit-keyframes intro {
+  from {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes intro {
+  from {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes introsub {
+  from {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes introsub {
+  from {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes bobbing-chevron {
+  from {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes bobbing-chevron {
+  from {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}/*# sourceMappingURL=index.css.map */
