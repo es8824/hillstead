@@ -206,10 +206,11 @@ p {
 }
 
 #direct-contact-info {
-  margin-top: 2em;
+  margin-top: 5em;
   font-family: "Poppins", sans-serif;
   font-size: 1.4em;
   text-align: center;
+  float: right;
 }
 
 #contact-area input, #contact-area textarea {
