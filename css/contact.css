@@ -207,7 +207,7 @@ p {
 
 #direct-contact-info {
   margin-top: 2em;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.4em;
   text-align: center;
 }
@@ -215,7 +215,7 @@ p {
 #contact-area input, #contact-area textarea {
   padding: 5px;
   width: 85%;
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.4em;
   margin: 0px 0px 10px 0px;
   border: 2px solid #ccc;
@@ -336,4 +336,4 @@ header nav ul .four a:active {
     width: 1200px;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=contact.css.map */
+}
